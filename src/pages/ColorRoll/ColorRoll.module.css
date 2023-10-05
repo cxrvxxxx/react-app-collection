@@ -1,0 +1,79 @@
+.scoreboard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.swatch {
+  height: 50px;
+  width: 50px;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  vertical-align: middle;
+  text-align: center;
+  font-size: large;
+  font-weight: bolder;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5em;
+}
+
+.button {
+  height: 150px;
+  width: 150px;
+  border-radius: 1em;
+  margin: 0.5em;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5em;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.cyan {
+  background-color: cyan;
+}
+
+.magenta {
+  background-color: magenta;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.violet {
+  background-color: violet;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.lime {
+  background-color: lime;
+}
+
+.highlighted {
+  background-color: beige;
+}
