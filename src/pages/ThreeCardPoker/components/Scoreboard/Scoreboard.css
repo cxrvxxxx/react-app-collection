@@ -1,0 +1,19 @@
+.scoreboard {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #fff;
+    margin-top: 3em;
+    margin-left: 5em;
+    margin-right: 5em;
+    border-radius: 1em;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+.score-value {
+    display: flex;
+    justify-content: center;
+}
+
+.leading {
+    color: green;
+}

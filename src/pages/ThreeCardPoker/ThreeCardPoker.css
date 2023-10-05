@@ -1,0 +1,22 @@
+.button-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.win-reason {
+    display: flex;
+    margin-top: 2em;
+    height: 5em;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.App {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    justify-content: center;
+}
