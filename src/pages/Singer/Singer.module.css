@@ -1,0 +1,87 @@
+* {
+    text-decoration: none !important;
+}
+
+.selection {
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+.button {
+    height: 3em;
+    width: 9em;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.3em;
+    margin: 0 0.3em 0.3em;
+    font-weight: bolder;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.input-lyrics {
+    height: 2em;
+    width: 40em;
+    border-radius: 0.3em;
+    text-align: center;
+}
+
+.lyrics-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.lyrics {
+    display: flex;
+    flex-direction: column;
+    width: 48em;
+    height: 24em;
+    border: solid 1px black;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 1em;
+}
+
+.phrase {
+    margin: 0.1em 0;
+    padding: 0 1em;
+    border-radius: 0.3em;
+}
+
+.red {
+    background-color: red;
+    border: solid 1px darkred;
+    color: white;
+}
+
+.orange {
+    background-color: orange;
+    border: solid 1px darkorange;
+    color: black;
+}
+
+.yellow {
+    background-color: yellow;
+    border: solid 1px #F6BE00;
+    color: black;
+}
+
+.blue {
+    background-color: blue;
+    border: solid 1px darkblue;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
