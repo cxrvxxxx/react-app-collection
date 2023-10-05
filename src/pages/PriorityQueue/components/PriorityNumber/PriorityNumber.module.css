@@ -1,0 +1,15 @@
+.entity {
+    display: flex;
+    flex-direction: column;
+    width: 5em;
+    margin: 1em;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+    border-radius: 1px solid black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.high-priority {
+    color: red;
+}

@@ -1,0 +1,82 @@
+.App {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: hidden;
+}
+
+.col1 {
+  display: flex;
+  height: 100%;
+  width: 25vw;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: cornflowerblue;
+  flex-direction: column;
+}
+
+.col2 {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  width: 75vw;
+  overflow-x: hidden;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.queue-block {
+  display: flex;
+  align-items: center;
+  height: 25%;
+  width: 100%;
+  background-color: lightgray;
+  border-radius: 20px;
+  justify-content: left;
+  padding-left: 25px;
+  margin: 1em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.queue-block {
+  overflow: auto;
+}
+
+.queue-block::-webkit-scrollbar {
+  width: 4px;
+  /* Set the width of the scrollbar */
+}
+
+/* Track (the area behind the thumb) */
+.queue-block::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  /* Set the background color of the track */
+}
+
+/* Thumb (the draggable part of the scrollbar) */
+.queue-block::-webkit-scrollbar-thumb {
+  background-color: #888;
+  /* Set the color of the thumb */
+  border-radius: 4px;
+  /* Add some rounded corners to the thumb */
+}
+
+/* On hover, style the thumb */
+.queue-block::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+  /* Change the color on hover */
+}
+
+.checkbox-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+  background-color: white;
+  width: 100%;
+  border-radius: 8px;
+}
