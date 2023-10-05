@@ -14,9 +14,10 @@
 }
 
 
-.App {
+.ThreeCardPoker {
     display: flex;
     flex-direction: column;
     font-family: sans-serif;
     justify-content: center;
+    margin: 0 30em;
 }

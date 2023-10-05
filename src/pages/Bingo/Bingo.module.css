@@ -4,7 +4,7 @@
     margin-top: 1em;
 }
 
-.container-vertical {
+.containerVertical {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -16,15 +16,15 @@
     border-radius: 0.5em;
 }
 
-.form-label {
+.formLabel {
     font-weight: bold;
 }
 
-.form-button {
+.formButton {
     margin-top: 1em !important;
 }
 
-.game-number {
+.gameNumber {
     text-align: center;
     vertical-align: center;
     font-weight: bolder;
@@ -36,26 +36,23 @@
     width: 1.5em;
 }
 
-h1 {
-    text-align: center;
-    vertical-align: center;
-}
-
 .clicked {
     background-color: lightblue;
 }
 
-.btn-container {
+.btnContainer {
     margin-top: 2em;
     justify-content: space-between !important;
 }
 
-.game-card {
+.gameCard {
     background-color: white;
     padding: 1em;
     border-radius: 1em;
 }
 
-.container-vertical h1 {
+.containerVerticalH1 {
     margin-top: 0;
+    text-align: center;
+    vertical-align: center;
 }

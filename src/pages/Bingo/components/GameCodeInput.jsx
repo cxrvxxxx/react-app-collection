@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Button } from '@mui/material';
+import styles from '../Bingo.module.css';
 
 export const GameCodeInput = ({ callback, codeCallback }) => {
     const [value, setValue] = useState('');
@@ -34,17 +35,17 @@ export const GameCodeInput = ({ callback, codeCallback }) => {
     }, [value]);
 
     return (
-        <div className='container-vertical'>
-            <label className="form-label" htmlFor="game-code">Enter game code</label>
+        <div className={`${styles.containerVertical}`}>
+            <label className={`${styles.formLabel}`} htmlFor="game-code">Enter game code</label>
             <input
-                className="textfield"
+                className={`${styles.textfield}`}
                 label="Enter game code:"
                 type="text"
                 id="game-code"
                 value={value}
                 onChange={handleChange} />
             <Button
-                className="form-button"
+                className={`${styles.formButton}`}
                 variant="contained"
                 color="success"
                 size="medium"

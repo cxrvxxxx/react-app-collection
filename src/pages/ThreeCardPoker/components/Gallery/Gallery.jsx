@@ -1,6 +1,6 @@
 import React, { useContext, useRef } from "react";
 import CardContext from "../../contexts/CardContext";
-import './Gallery.css';
+import styles from './Gallery.module.css';
 import GalleryItem from "./GalleryItem";
 
 export const getCardImage = ({ suit, value }) => {
@@ -47,13 +47,13 @@ const Gallery = () => {
   const { activeCards: cards, winPlayer: winner } = useContext(CardContext);
 
   return (
-    <div className="gallery">
-      <div className={"card-container" + (winner === 1 ? " winner" : "")}>
+    <div className={`${styles.gallery}`}>
+      <div className={`${styles['card-container']} ${winner === 1 ? styles.winner : ''}`}>
         {cards?.playerOne.map((card) => (
           <GalleryItem key={key.current++} value={card} />
         ))}
       </div>
-      <div className={"card-container" + (winner === 2 ? " winner" : "")}>
+      <div className={`${styles['card-container']} ${winner === 2 ? styles.winner : ''}`}>
         {cards?.playerTwo.map((card) => (
           <GalleryItem key={key.current++} value={card} />
         ))}

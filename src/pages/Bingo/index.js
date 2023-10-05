@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Bingo.css';
+import styles from './Bingo.module.css';
 import GameCard from './components/GameCard';
 import GameCodeInput from './components/GameCodeInput';
 
@@ -31,8 +31,8 @@ const Bingo = () => {
   const [gameCode, setGameCode] = useState('');
 
   return (
-    <div className="Bingo">
-      <div className='container'>
+    <div className={`${styles.Bingo}`}>
+      <div className={`${styles.container}`}>
         {cards === null ? <GameCodeInput callback={setCards} codeCallback={setGameCode} /> : <GameCard data={cards} callback={setCards} code={gameCode} />}
       </div>
     </div>

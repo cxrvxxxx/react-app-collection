@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './ThreeCardPoker.css';
+import styles from './ThreeCardPoker.module.css';
 import Button from "@mui/material/Button";
 import CardContext from './contexts/CardContext';
 import Gallery from './components/Gallery/Gallery';
@@ -258,24 +258,20 @@ const App = () => {
   }, [activeCards]);
 
   return (
-    <CardContext.Provider value={cardContextValue}>
-      <div className="App">
-        <div className="gallery-container d-flex justify-content-center">
-          <Gallery />
-        </div>
-        <div className="win-reason">
+    <div className={`${styles.ThreeCardPoker}`}>
+      <CardContext.Provider value={cardContextValue}>
+        <Gallery />
+        <div className={`${styles['win-reason']}`}>
           <h1>{winReason}</h1>
         </div>
-        <div className="button-container">
+        <div className={`${styles['button-container']}`}>
           <Button variant="contained" color="success" size="large" onClick={handleDealCardsClick}>
             Deal Cards
           </Button>
         </div>
-        <div className="d-flex justify-content-center">
-          <Scoreboard />
-        </div>
-      </div>
-    </CardContext.Provider>
+        <Scoreboard />
+      </CardContext.Provider>
+    </div>
   );
 }
 
